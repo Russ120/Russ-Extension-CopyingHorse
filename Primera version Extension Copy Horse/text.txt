@@ -1,0 +1,49 @@
+
+# import pyttsx3
+
+# # instanciando libreria del habla de voz
+# engine = pyttsx3.init()
+
+# # configuracion voz
+# voices = engine.getProperty('voices')
+# velocidadDeVoz = 100
+# engine.setProperty('voice', voices[2].id)
+
+# def hablar(texto):
+#     engine.say(str(texto))
+#     engine.runAndWait()
+
+
+
+# def imprimir_texto_copiado():
+#     texto_copiado = pyperclip.paste()
+#     print("Texto copiado con el mouse:", texto_copiado)
+
+# # Configurar un atajo de teclado para llamar a la función
+# keyboard.add_hotkey('ctrl+alt+v', imprimir_texto_copiado)
+
+# # Mantener el programa en ejecución
+# keyboard.wait('esc')
+
+
+
+# @app.route('/mostrar', methods=['GET'])
+# @cross_origin()
+# def search():
+#     texto_copiado = pyperclip.paste()
+#     engine.say(texto_copiado)
+#     engine.runAndWait()
+#     content = {
+#         'text': texto_copiado
+#     }
+#     return jsonify(content)
+
+
+
+
+
+
+  "browser_action": {
+    "default_icon": "icon.jpg",
+    "default_popup": "popup.html"
+  },

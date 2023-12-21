@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+  <link rel="stylesheet" href="Stylehorse.css">
+  <!-- <link rel="stylesheet" href="/prueba/p.css"> -->
+  <link rel="stylesheet" href="Stylebutton.css">
+  <link rel="manifest" href="manifest.json">
+
+  <title>Lector de Voz</title>
+  <style>
+    body {
+      width: 200px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      font-size: small;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #mostrarTextoBtn {
+      margin-top: 20px;
+      border-radius: 10%;
+    }
+  </style>
+
+
+</head>
+<body>
+
+  <input type="checkbox" id="toggle" >
+  <label for="toggle">
+    <div class="floor"></div>
+    
+    <div class="🐴 animate">
+      <div class="front-leg right">
+        <div class="shoulder">
+          <div class="upper">
+            <div class="knee">
+              <div class="lower">
+                <div class="ankle">
+                  <div class="foot">
+                    <div class="hoof"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-leg right">
+        <div class="top">
+          <div class="thigh">
+            <div class="lower-leg">
+              <div class="foot">
+                <div class="hoof"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tail">
+        <div class="nub">
+          <div class="section">
+          <div class="section">
+          <div class="section">
+          <div class="section">
+          <div class="section">
+          <div class="section last">
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="section">
+        <div class="section">
+        <div class="section">
+        <div class="section">
+        <div class="section last">
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="back-side"></div>
+      </div>
+      
+      <div class="neck">
+        <div class="under"></div>
+        <div class="front"></div>
+        <div class="base"></div>
+        <div class="top"></div>
+        <div class="shoulder"></div>
+      </div>
+      <div class="front-leg left">
+        <div class="shoulder">
+          <div class="upper">
+            <div class="knee">
+              <div class="lower">
+                <div class="ankle">
+                  <div class="foot">
+                    <div class="hoof"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="back-leg left">
+        <div class="top">
+          <div class="thigh">
+            <div class="lower-leg">
+              <div class="foot">
+                <div class="hoof"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="head">
+        <div class="skull"></div>
+        <div class="nose"></div>
+        <div class="face"></div>
+        <div class="lip"></div>
+        <div class="jaw"></div>
+        <div class="chin"></div>
+        <div class="ear"></div>
+        <div class="eye"></div>
+      </div>
+    </div>	
+    
+    <div class="dust front">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    <div class="dust back">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    
+    
+  </label>
+
+
+  <footer>
+
+
+<!-- partial:index.partial.html -->
+<div class="container">
+	<button id="play-pause" class="btn play-pause">
+		<div class="icon-container">
+			<svg class="icon play">
+				<use xlink:href="#play"></use>
+			</svg>
+		</div>
+		<div class="icon-container">
+			<svg class="icon pause">
+				<use xlink:href="#pause"></use>
+			</svg>
+		</div>
+	</button>
+</div>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="icons">
+	<symbol id="play" viewBox="0 0 448 512">
+		<path
+				d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+	</symbol>
+	<symbol id="pause" viewBox="0 0 448 512">
+		<path
+				d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48
+					48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+	</symbol>
+
+</svg>
+
+
+    <!-- <h1 id="texto">Hola Mundo</h1> -->
+  <!-- <button id="mostrarTextoBtn" >Leer texto</button> -->
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
